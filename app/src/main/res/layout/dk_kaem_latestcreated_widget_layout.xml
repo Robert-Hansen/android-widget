@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/widget_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/widgetLayoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2a3f54"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <ImageView
+                android:id="@+id/widgetImgLauncher"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:id="@+id/widgetTopBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                tools:ignore="RtlSymmetry">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kaem.dk"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#f2f2f2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txvWidgetTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/latest_created_on_kaem_dk"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#f2f2f2" />
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/REFRESH_BUTTON"
+                style="@android:style/Widget.DeviceDefault.ImageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".100"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:contentDescription="@string/refresh"
+                android:src="@android:drawable/stat_notify_sync"
+                android:textAlignment="center"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#aaa" />
+
+        <ListView
+            android:id="@+id/dkLatestCreatedWidgetCollectionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

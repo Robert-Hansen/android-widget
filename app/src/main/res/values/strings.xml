@@ -1,6 +1,17 @@
 <resources>
-    <string name="app_name">KAEM widget</string>
-    <string name="appwidget_text">KAEM.DK STATS</string>
+    <string name="app_name">KAEM Widgets</string>
+    <string name="kaem_dk_stats">KAEM.DK STATS</string>
+    <string name="kaem_io_stats">KAEM.IO STATS</string>
     <string name="add_widget">Add widget</string>
     <string name="refresh">Refresh</string>
+    <string name="users">Users</string>
+    <string name="projects">Projects</string>
+    <string name="teams">Teams</string>
+    <string name="lookups">Lookups</string>
+    <string name="initial_value">0</string>
+    <string name="todo">TODO</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="latest_created_on_kaem_dk">Senest oprettet på KAEM</string>
+    <string name="latest_see_button_kaem_dk">SE</string>
 </resources>
+
